@@ -28,5 +28,5 @@ app.get("/hero", async function(req, res){
     res.render("hero.ejs",{heroData: data});
 });
 
-app.listen(3000, () => console.log("running at 3000"));
+app.listen(process.env.PORT || 3000, () => console.log("running!"));
 
