@@ -1,0 +1,41 @@
+<%- include ("partials/header.ejs") -%>
+
+<main class="container">
+    <h2 class="font-weight-bold"><%= heroData.name %></h2>
+    <img src="<%= heroData.images.md %>" alt="Hero-image" class="img-thumbnail img-fluid">
+    
+    <div>
+        <h4>BIOGRAPHY</h4>
+        <ul>
+            <li>FULLNAME: <%=heroData.biography.fullName %></li>
+            <li>ALTER EGOS: <%=heroData.biography.alterEgos %></li>
+            <li>BIRTH-PLACE: <%=heroData.biography.placeOfBirth %></li>
+            <li>FIRST APPEARANCE: <%=heroData.biography.firstAppearance %></li>
+            <li>PUBLISHER: <%=heroData.biography.publisher %></li>
+            <li>ALIASES: </li>
+            <p>
+                <ol>
+                    <% heroData.biography.aliases.forEach(function(alias){ %>
+                        <li><%=alias %></li> 
+                   <% }) %>
+                </ol>
+                
+            </p>
+            
+        </ul>
+    </div>
+    
+    <div>
+        <h4>POWERSTATS</h4>
+        <ul>
+            <li>INTELLIGENCE: </li><%=heroData.powerstats.intelligence %></li>
+            <li>STRENGTH: <%=heroData.powerstats.strength %></li>
+            <li>SPEED: <%=heroData.powerstats.speed %></li>
+            <li>DURABILITY: <%=heroData.powerstats.durability %></li>
+            <li>POWER: <%=heroData.powerstats.power %></li>
+            <li>COMBAT: <%=heroData.powerstats.combat %></li>
+        </ul>
+    </div>
+</main>
+
+<%- include ("partials/footer.ejs") -%>

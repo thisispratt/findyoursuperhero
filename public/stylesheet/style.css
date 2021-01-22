@@ -1,0 +1,12 @@
+body{
+    margin: 50px;
+    background-color: black;
+    color: white !important;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.jumbotron{
+    color: black;
+    
+}

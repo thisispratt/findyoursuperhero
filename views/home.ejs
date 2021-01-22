@@ -1,0 +1,24 @@
+<%- include ("partials/header.ejs") -%>
+<main class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">FIND YOUR SUPER-HERO</h1>
+        <p class="lead">This is a simple website to find information about your favorite super-hero.</p>
+        <hr class="my-4">
+        <p>Enter the name of your superhero below and get all the info about him/her.</p>
+        <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+        <form action="/hero" method="POST">
+            <label for="heroName">
+                Name of SuperHero
+                <input type="text" id="heroName" name="superHeroName"/>
+            </label>
+            <button type="submit" class="btn btn-primary btn-lg">SUBMIT</button>
+        </form>
+      </div>
+    
+    
+    
+    
+</main>
+
+
+<%- include ("partials/footer.ejs") -%>
